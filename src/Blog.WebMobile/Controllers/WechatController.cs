@@ -9,13 +9,14 @@ using Blog.WebMobile.Models;
 using Microsoft.Extensions.Options;
 using Senparc.Weixin.MP;
 using Senparc.Weixin.MP.Entities;
+using Blog.Common;
 
 namespace Blog.WebMobile.Controllers
 {
     public class WechatController : Controller
     {
         [HttpPost]
-        public IActionResult Post([FromServices]IOptions<AppSettings> appSettings, WechatPostRequestModel model)
+        public IActionResult Post([FromServices]IOptions<AppSetting> appSettings, WechatPostRequestModel model)
         {
             if (!CheckSignature.Check(model.signature, model.timestamp, model.nonce, appSettings.Value.Token))
             {
@@ -59,7 +60,7 @@ namespace Blog.WebMobile.Controllers
             }
         }
 
-        public IActionResult Get([FromServices]IOptions<AppSettings> appSettings, WechatGetRequestModel model)
+        public IActionResult Get([FromServices]IOptions<AppSetting> appSettings, WechatGetRequestModel model)
         {
             if (CheckSignature.Check(model.signature, model.timestamp, model.nonce, appSettings.Value.Token))
             {

@@ -1,0 +1,28 @@
+2018-01-23 22:49:02.2128 Info Message Template Auto Format enabled
+2018-01-23 22:49:02.3178 Info Adding target File Target[allfile]
+2018-01-23 22:49:02.4968 Error Error parsing layout aspnet-sessionid will be ignored. Exception: System.ArgumentException: LayoutRenderer cannot be found: 'aspnet-sessionid'. Is NLog.Web not included?
+   at NLog.Config.Factory`2.CreateInstance(String name)
+   at NLog.Layouts.LayoutParser.GetLayoutRenderer(ConfigurationItemFactory configurationItemFactory, String name)
+2018-01-23 22:49:02.5361 Error Error parsing layout aspnet-request-host will be ignored. Exception: System.ArgumentException: LayoutRenderer cannot be found: 'aspnet-request-host'. Is NLog.Web not included?
+   at NLog.Config.Factory`2.CreateInstance(String name)
+   at NLog.Layouts.LayoutParser.GetLayoutRenderer(ConfigurationItemFactory configurationItemFactory, String name)
+2018-01-23 22:49:02.5759 Error Error parsing layout aspnet-request-useragent will be ignored. Exception: System.ArgumentException: LayoutRenderer cannot be found: 'aspnet-request-useragent'. Is NLog.Web not included?
+   at NLog.Config.Factory`2.CreateInstance(String name)
+   at NLog.Layouts.LayoutParser.GetLayoutRenderer(ConfigurationItemFactory configurationItemFactory, String name)
+2018-01-23 22:49:02.6258 Error Error parsing layout aspnet-request-url will be ignored. Exception: System.ArgumentException: LayoutRenderer cannot be found: 'aspnet-request-url'. Is NLog.Web not included?
+   at NLog.Config.Factory`2.CreateInstance(String name)
+   at NLog.Layouts.LayoutParser.GetLayoutRenderer(ConfigurationItemFactory configurationItemFactory, String name)
+2018-01-23 22:49:02.6847 Error Error parsing layout aspnet-request-querystring will be ignored. Exception: System.ArgumentException: LayoutRenderer cannot be found: 'aspnet-request-querystring'. Is NLog.Web not included?
+   at NLog.Config.Factory`2.CreateInstance(String name)
+   at NLog.Layouts.LayoutParser.GetLayoutRenderer(ConfigurationItemFactory configurationItemFactory, String name)
+2018-01-23 22:49:02.7699 Error Error parsing layout aspnet-mvc-controller will be ignored. Exception: System.ArgumentException: LayoutRenderer cannot be found: 'aspnet-mvc-controller'. Is NLog.Web not included?
+   at NLog.Config.Factory`2.CreateInstance(String name)
+   at NLog.Layouts.LayoutParser.GetLayoutRenderer(ConfigurationItemFactory configurationItemFactory, String name)
+2018-01-23 22:49:02.8252 Error Error parsing layout aspnet-mvc-action will be ignored. Exception: System.ArgumentException: LayoutRenderer cannot be found: 'aspnet-mvc-action'. Is NLog.Web not included?
+   at NLog.Config.Factory`2.CreateInstance(String name)
+   at NLog.Layouts.LayoutParser.GetLayoutRenderer(ConfigurationItemFactory configurationItemFactory, String name)
+2018-01-23 22:49:02.8252 Info Adding target File Target[ownFile-web]
+2018-01-23 22:49:02.8252 Info Adding target Null Target[blackhole]
+2018-01-23 22:49:02.8451 Info Configured from an XML element in D:\github\blog\src\Blog.WebMobile\nlog.config...
+2018-01-23 22:49:02.8805 Info Found 53 configuration items
+2018-01-23 22:49:02.8991 Info Found 53 configuration items
