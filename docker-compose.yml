@@ -1,0 +1,15 @@
+version: '3'
+
+services:
+  blog.webmobile:
+    image: blog.webmobile
+    build:
+      context: .
+      dockerfile: src/Blog.WebMobile/Dockerfile
+
+  blog.webback:
+    image: blog.webback
+    build:
+      context: .
+      dockerfile: src/Blog.WebBack/Dockerfile
+

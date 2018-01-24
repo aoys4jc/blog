@@ -1,0 +1,15 @@
+version: '3'
+
+services:
+  blog.webmobile:
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+    ports:
+      - "80"
+
+  blog.webback:
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+    ports:
+      - "80"
+
