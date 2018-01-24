@@ -14,6 +14,7 @@ namespace Blog.WebMobile
     {
         public static void Main(string[] args)
         {
+            Console.Title = "WebMobile";
             BuildWebHost(args).Run();
         }
 

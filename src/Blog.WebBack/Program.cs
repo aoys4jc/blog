@@ -14,6 +14,7 @@ namespace Blog.WebBack
     {
         public static void Main(string[] args)
         {
+            Console.Title = "WebBack";
             BuildWebHost(args).Run();
         }
 
