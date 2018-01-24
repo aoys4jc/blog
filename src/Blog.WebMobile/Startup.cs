@@ -36,6 +36,7 @@ namespace Blog.WebMobile
             services.AddResponseCompression();
 
             services.AddMvc();
+            services.AddOptions();
             services.AddCors(options => options.AddPolicy("AllowAll", p => p.AllowAnyOrigin().AllowAnyHeader().AllowAnyMethod().AllowCredentials()));
 
             services.Configure<AppSetting>(Configuration.GetSection("AppString"));
@@ -56,6 +57,7 @@ namespace Blog.WebMobile
                 {
                     HotModuleReplacement = true
                 });
+                app.UseBrowserLink();
             }
             else
             {
