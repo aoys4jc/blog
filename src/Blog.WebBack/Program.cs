@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -14,7 +14,6 @@ namespace Blog.WebBack
     {
         public static void Main(string[] args)
         {
-            Console.Title = "WebBack";
             BuildWebHost(args).Run();
         }
 
