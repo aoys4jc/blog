@@ -6,7 +6,7 @@ FROM microsoft/aspnetcore-build:2.0 AS build
 WORKDIR /src
 COPY *.sln ./
 COPY src/Blog.WebMobile/Blog.WebMobile.csproj src/Blog.WebMobile/
-COPY D:\github\git\blog\src\Blog.WebMobile\nuget.config src/Blog.WebMobile/
+COPY src/Blog.WebMobile/nuget.config src/Blog.WebMobile/
 COPY src/Blog.BLL/Blog.BLL.csproj src/Blog.BLL/
 COPY src/Blog.Mvc/Blog.Mvc.csproj src/Blog.Mvc/
 COPY src/Blog.Common/Blog.Common.csproj src/Blog.Common/
